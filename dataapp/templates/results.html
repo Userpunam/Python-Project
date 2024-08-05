@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Data Analysis Results</h2>
+    <h3>First Few Rows of Data</h3>
+    {{ dataframe|safe }}
+    
+    <h3>Summary Statistics</h3>
+    {{ analysis_results.summary_stats|safe }}
+
+    <h3>Missing Values</h3>
+    {{ analysis_results.missing_values|safe }}
+    
+    <h3>Mean Values</h3>
+    {{ analysis_results.mean_values|safe }}
+    
+    <h3>Median Values</h3>
+    {{ analysis_results.median_values|safe }}
+    
+    <h3>Standard Deviation</h3>
+    {{ analysis_results.std_values|safe }}
+
+    <h3>Plots</h3>
+    {% for plot in analysis_results.plots %}
+        <img src="{{ plot }}" alt="Plot">
+    {% endfor %}
+
+</body>
+</html>
