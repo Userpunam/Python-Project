@@ -24,6 +24,5 @@ Display the plots on the web page
 Use Django templates to create  a simple and user-friendly interface.
 Display the data analysis results and visualizations in a clear and orgainised manner .
 
-Pip – pip is python dependencies manager  - ja cha through apan navi packages la install karu sahkto
-Django -Django ek package sarkha asto tyla aplyaa pthon madhe vegd install karv lagt
+Pip – pip is python dependencies manager 
 
